@@ -1,0 +1,10 @@
+{
+  "name": "squadriglie",
+  "version": "1.0.0",
+  "description": "Bacheca per comporre squadriglie, con opzioni alternative e utenze di reparto. Self-hosted.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=24.15.0 <25" },
+  "scripts": { "start": "node server.mjs", "test": "node --test test/*.test.mjs" }
+}

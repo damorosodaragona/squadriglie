@@ -1,0 +1,13 @@
+services:
+  squadriglie:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      DEMO_ENABLED: ${DEMO_ENABLED:-true}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    volumes:
+      - squadriglie-data:/app/data
+    restart: unless-stopped
+volumes:
+  squadriglie-data:
